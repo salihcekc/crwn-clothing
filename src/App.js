@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom/dist";
 
-import Home from "./components/Routes/Home/Home.component";
+import Home from "./Routes/Home/Home.component"
 import Autentication from "./components/Authentication/Authentication.component";
 
 const Shop = () => {
