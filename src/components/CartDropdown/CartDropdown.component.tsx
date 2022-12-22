@@ -1,4 +1,5 @@
 import "./CartDropdown.styles.scss";
+import { useCallback } from "react";
 import Button from "../Button/Button.component";
 import CartItem from "../CartItem/CartItem.component";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,10 +15,10 @@ const CartDropdown = () => {
 
   const cartItems = useSelector(selectCartItems);
 
-  const goToCheckoutHandler = () => {
+  const goToCheckoutHandler = useCallback(() => {
     navigate("/checkout");
     dispatch(setIsCartOpen(false));
-  };
+  }, []);
   return (
     <div className="cart-dropdown-container">
       <div className="cart-items">
