@@ -53,7 +53,7 @@ const SignUpForm = () => {
           label="Display Name"
           type="text"
           required
-          changeHandler={handleChange}
+          onChange={handleChange}
           name="displayName"
           value={displayName}
         />
@@ -61,7 +61,7 @@ const SignUpForm = () => {
           label="Email"
           type="email"
           required
-          changeHandler={handleChange}
+          onChange={handleChange}
           name="email"
           value={email}
         />
@@ -69,7 +69,7 @@ const SignUpForm = () => {
           label="Password"
           type="password"
           required
-          changeHandler={handleChange}
+          onChange={handleChange}
           name="password"
           value={password}
         />
@@ -77,7 +77,7 @@ const SignUpForm = () => {
           label="Confirm Password"
           type="password"
           required
-          changeHandler={handleChange}
+          onChange={handleChange}
           name="confirmPassword"
           value={confirmPassword}
         />

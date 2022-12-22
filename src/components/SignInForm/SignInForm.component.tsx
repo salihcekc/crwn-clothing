@@ -61,7 +61,7 @@ const SignInForm = () => {
           label="Email"
           type="email"
           required
-          changeHandler={handleChange}
+          onChange={handleChange}
           name="email"
           value={email}
         />
@@ -69,7 +69,7 @@ const SignInForm = () => {
           label="Password"
           type="password"
           required
-          changeHandler={handleChange}
+          onChange={handleChange}
           name="password"
           value={password}
         />
