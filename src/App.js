@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom/dist";
 import Spinner from "./components/Spinner/Spinner.component";
 import { checkUserSession } from "./store/user/user.action";
 
+import { GlobalStyle } from "./global.styles";
+
 const Autentication = lazy(() =>
   import("./components/Authentication/Authentication.component")
 );
@@ -20,6 +22,7 @@ function App() {
   }, []);
   return (
     <Suspense fallback={<Spinner />}>
+      <GlobalStyle />
       <Routes>
         <Route index element={<Home />} />
         <Route path="shop/*" element={<Shop />} />
